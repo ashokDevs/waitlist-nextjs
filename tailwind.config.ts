@@ -7,6 +7,9 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    daisyui: {
+      themes: ["cupcake","light","forest"],
+    },
     extend: {
       colors: {
         background: "var(--background)",
@@ -14,6 +17,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };
 export default config;
